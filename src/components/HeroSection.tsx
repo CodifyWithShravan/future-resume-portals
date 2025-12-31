@@ -97,7 +97,7 @@ const HeroSection = () => {
               <span className="text-sm font-mono">Email</span>
             </a>
             <a
-              href="https://linkedin.com/in/ShravanKumar"
+              href="https://www.linkedin.com/in/shravan-kumar-thudi-91a2b736b/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 glass-card hover:neon-border transition-all duration-300 group"
