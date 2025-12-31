@@ -45,7 +45,7 @@ const ContactSection = () => {
               </a>
 
               <a
-                href="https://linkedin.com/in/ShravanKumar"
+                href="https://www.linkedin.com/in/shravan-kumar-thudi-91a2b736b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-xl bg-muted/20 hover:bg-muted/40 transition-colors group"
