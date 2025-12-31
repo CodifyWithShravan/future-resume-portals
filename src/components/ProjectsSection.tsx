@@ -10,6 +10,8 @@ const projects = [
     technologies: ["Python", "Generative AI", "LLMs"],
     icon: Bot,
     gradient: "from-neon-cyan to-neon-blue",
+    github:"https://github.com/CodifyWithShravan/TechHack",
+    live:"https://unimind-woad.vercel.app"
   },
   {
     title: "Krishi Sakhi",
@@ -19,6 +21,7 @@ const projects = [
     technologies: ["Flutter", "Dart", "Supabase", "Gemini AI"],
     icon: Leaf,
     gradient: "from-green-400 to-emerald-500",
+    github:"https://github.com/CodifyWithShravan/Innoquest-3"
   },
   {
     title: "MediVault.AI",
@@ -28,6 +31,7 @@ const projects = [
     technologies: ["MERN Stack", "Chart.js", "JWT"],
     icon: Heart,
     gradient: "from-neon-magenta to-pink-500",
+    github:"https://github.com/VookaKavyaSuma/MediVault.AI"
   },
 ];
 
@@ -93,14 +97,14 @@ const ProjectsSection = () => {
 
                 {/* Actions */}
                 <div className="flex gap-4">
-                  <button className="flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
+                  <a href = {project.github} className="flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
                     <Github className="w-4 h-4" />
                     Code
-                  </button>
-                  <button className="flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
+                  </a>
+                  <a href= {project.live} className="flex items-center gap-2 text-sm font-mono text-muted-foreground hover:text-primary transition-colors">
                     <ExternalLink className="w-4 h-4" />
                     Demo
-                  </button>
+                  </a>
                 </div>
               </div>
             </motion.div>
