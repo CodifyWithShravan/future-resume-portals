@@ -1,5 +1,14 @@
 import { motion } from "framer-motion";
 import { Mail, Linkedin, MapPin, Phone } from "lucide-react";
+import TypingEffect from "./TypingEffect";
+
+const roles = [
+  "Full Stack Developer",
+  "GenAI Enthusiast",
+  "Flutter Developer",
+  "React Developer",
+  "AI Builder",
+];
 
 const HeroSection = () => {
   return (
@@ -56,19 +65,17 @@ const HeroSection = () => {
             <span className="text-foreground">KUMAR THUDI</span>
           </motion.h1>
 
-          {/* Title */}
-          <motion.p
+          {/* Title with typing effect */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
             className="text-xl md:text-2xl font-mono text-muted-foreground mb-8"
           >
             <span className="text-primary">&lt;</span>
-            Full Stack Developer
-            <span className="text-secondary"> & </span>
-            GenAI Enthusiast
+            <TypingEffect words={roles} typingSpeed={80} deletingSpeed={40} pauseDuration={2500} />
             <span className="text-primary"> /&gt;</span>
-          </motion.p>
+          </motion.div>
 
           {/* Description */}
           <motion.p
